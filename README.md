@@ -7,7 +7,7 @@ Push the dots up with your finger, but be careful.
 Challenge your friends and see who can keep the dots out of fire!
 
 ## Platforms
-* Android (live on Google Play)
+* Android ([live on Google Play](https://play.google.com/store/apps/details?id=com.carrotcorp.sizzle))
 * iOS (WIP)
 
 ## Open Source
