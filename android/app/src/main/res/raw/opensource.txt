@@ -1,0 +1,19 @@
+Sizzle uses the following open-source content and libraries:
+
+* Music
+    "Space 1990"
+    by Kevin MacLeod
+    Licensed under Creative Commons BY Attribution 3.0
+    Web: http://incompetech.com
+
+* Fire Animation (altered from original)
+    "Animated fire"
+    by Nevit
+    Licensed under Creative Commons Attribution-Share Alike 3.0 Unported
+    Web: https://commons.wikimedia.org/wiki/File:Animated_fire_by_nevit.gif
+
+* GIF Rendering (application library)
+    "android-gif-drawable"
+    by Karol Wrótniak
+    Licensed under MIT License
+    Web: https://github.com/koral--/android-gif-drawable

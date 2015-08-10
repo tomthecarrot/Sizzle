@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="BuM-rJ-Bsh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="375" id="aFp-Mf-JYG"/>
+                        <constraint firstAttribute="height" constant="667" id="hGb-Lv-MGS"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logo_beta.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kz7-rq-obC">
+                    <rect key="frame" x="21" y="98" width="333" height="178"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="178" id="p3c-BJ-sMJ"/>
+                        <constraint firstAttribute="width" constant="333" id="zB1-vi-Bls"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Kz7-rq-obC" secondAttribute="trailing" constant="21" id="T53-Uf-a3w"/>
+                <constraint firstItem="Kz7-rq-obC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="21" id="uJf-Fr-7Qy"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="547.5" y="454.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg.png" width="1080" height="1920"/>
+        <image name="logo_beta.png" width="500" height="250"/>
+    </resources>
+</document>

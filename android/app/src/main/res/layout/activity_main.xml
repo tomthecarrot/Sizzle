@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:weightSum="100">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_weight="33"
+            android:layout_centerHorizontal="true"></FrameLayout>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="67"
+            android:id="@+id/gif"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/fire"
+            android:visibility="visible"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
+
+    <ImageView android:src="@drawable/logo" android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:textSize="72dp"
+        android:textColor="#ffffff"
+        android:id="@+id/textView"
+        android:layout_marginBottom="56dp"
+        android:layout_above="@+id/b_play"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/b_play"
+        android:src="@drawable/b_play"
+        android:onClick="play"
+        android:layout_marginBottom="172dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="Tutorial"
+        android:id="@+id/b_tutorial"
+        android:onClick="tutorial"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:text="More"
+        android:id="@+id/b_opensource"
+        android:background="#232323"
+        android:textColor="#aaaaaa"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="opensource" />
+
+</RelativeLayout>

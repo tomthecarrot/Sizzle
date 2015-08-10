@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.carrotcorp.sizzle.GameOver"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:weightSum="100">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_weight="33"
+            android:layout_centerHorizontal="true"></FrameLayout>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="67"
+            android:id="@+id/gif"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/fire"
+            android:visibility="visible"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
+
+    <TextView android:text="I just scored" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/desc1"
+        android:textIsSelectable="false"
+        android:textSize="56dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" />
+
+    <TextView android:text="on Sizzle!" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/desc2"
+        android:textIsSelectable="false"
+        android:textSize="56dp"
+        android:layout_below="@+id/scoreView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/scoreView"
+        android:textSize="150dp"
+        android:layout_below="@+id/desc1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/b_play"
+        android:src="@drawable/b_play"
+        android:onClick="play"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/desc1"
+        android:layout_alignStart="@+id/desc1"
+        android:layout_marginBottom="30dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:id="@+id/b_instagram"
+        android:src="@drawable/b_instagram"
+        android:onClick="share"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/desc1"
+        android:layout_alignEnd="@+id/desc1"
+        android:layout_marginBottom="30dp" />
+
+</RelativeLayout>

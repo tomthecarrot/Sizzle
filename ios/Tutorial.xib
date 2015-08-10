@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Tutorial">
+            <connections>
+                <outlet property="tutView" destination="b8q-r7-STU" id="tyg-Pr-QAt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b8q-r7-STU">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="667" id="7Z6-bx-Zf2"/>
+                        <constraint firstAttribute="width" constant="375" id="qoC-9C-ofO"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JM-w3-8Jr">
+                    <rect key="frame" x="275" y="567" width="75" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="PM0-uy-5M5"/>
+                        <constraint firstAttribute="width" constant="75" id="tjE-al-uML"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="b_play.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="nextTut:" destination="-1" eventType="touchUpInside" id="0S2-mc-yZW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="b8q-r7-STU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9fd-P1-DDL"/>
+                <constraint firstAttribute="bottom" secondItem="b8q-r7-STU" secondAttribute="bottom" id="Cvg-yi-Dsh"/>
+                <constraint firstItem="b8q-r7-STU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="F10-ka-qUb"/>
+                <constraint firstAttribute="trailing" secondItem="4JM-w3-8Jr" secondAttribute="trailing" constant="25" id="I4a-Y3-Xjr"/>
+                <constraint firstAttribute="trailing" secondItem="b8q-r7-STU" secondAttribute="trailing" id="bVA-rt-8Bl"/>
+                <constraint firstAttribute="bottom" secondItem="4JM-w3-8Jr" secondAttribute="bottom" constant="25" id="mhB-c0-bfr"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="b_play.png" width="191" height="191"/>
+    </resources>
+</document>

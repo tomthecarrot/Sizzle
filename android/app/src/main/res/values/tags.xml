@@ -1,0 +1,4 @@
+<resources>
+    <item name="dotTouchState" type="id"/>
+    <item name="dotBurnState" type="id"/>
+</resources>

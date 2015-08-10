@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E23366EA1B4F058700732542 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = E23366E91B4F058700732542 /* UIImage+animatedGIF.m */; };
+		E23367171B4F0A3E00732542 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = E23367151B4F0A3E00732542 /* Game.m */; };
+		E23367181B4F0A3E00732542 /* Game.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23367161B4F0A3E00732542 /* Game.xib */; };
+		E233671C1B4F0A4E00732542 /* Tutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = E233671A1B4F0A4E00732542 /* Tutorial.m */; };
+		E233671D1B4F0A4E00732542 /* Tutorial.xib in Resources */ = {isa = PBXBuildFile; fileRef = E233671B1B4F0A4E00732542 /* Tutorial.xib */; };
+		E23367201B4F0A7000732542 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = E233671F1B4F0A7000732542 /* Dot.m */; };
+		E23367251B4F221300732542 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = E23367241B4F221300732542 /* Helper.m */; };
+		E233673B1B4F449E00732542 /* b_instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = E23367271B4F449E00732542 /* b_instagram.png */; };
+		E233673C1B4F449E00732542 /* b_play.png in Resources */ = {isa = PBXBuildFile; fileRef = E23367281B4F449E00732542 /* b_play.png */; };
+		E233673D1B4F449E00732542 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E23367291B4F449E00732542 /* bg.png */; };
+		E233673E1B4F449E00732542 /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E233672A1B4F449E00732542 /* bgmusic.mp3 */; };
+		E233673F1B4F449E00732542 /* dot1burn.png in Resources */ = {isa = PBXBuildFile; fileRef = E233672B1B4F449E00732542 /* dot1burn.png */; };
+		E23367401B4F449E00732542 /* dot1norm.png in Resources */ = {isa = PBXBuildFile; fileRef = E233672C1B4F449E00732542 /* dot1norm.png */; };
+		E23367411B4F449E00732542 /* dot2burn.png in Resources */ = {isa = PBXBuildFile; fileRef = E233672D1B4F449E00732542 /* dot2burn.png */; };
+		E23367421B4F449E00732542 /* dot2norm.png in Resources */ = {isa = PBXBuildFile; fileRef = E233672E1B4F449E00732542 /* dot2norm.png */; };
+		E23367431B4F449E00732542 /* fire.gif in Resources */ = {isa = PBXBuildFile; fileRef = E233672F1B4F449E00732542 /* fire.gif */; };
+		E23367441B4F449E00732542 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = E23367301B4F449E00732542 /* ic_launcher.png */; };
+		E23367451B4F449E00732542 /* ic_launcher1.png in Resources */ = {isa = PBXBuildFile; fileRef = E23367311B4F449E00732542 /* ic_launcher1.png */; };
+		E23367461B4F449E00732542 /* levels.txt in Resources */ = {isa = PBXBuildFile; fileRef = E23367321B4F449E00732542 /* levels.txt */; };
+		E23367471B4F449E00732542 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E23367331B4F449E00732542 /* logo.png */; };
+		E23367481B4F449E00732542 /* logo_beta.png in Resources */ = {isa = PBXBuildFile; fileRef = E23367341B4F449E00732542 /* logo_beta.png */; };
+		E23367491B4F449E00732542 /* opensource-ios.txt in Resources */ = {isa = PBXBuildFile; fileRef = E23367351B4F449E00732542 /* opensource-ios.txt */; };
+		E233674A1B4F449E00732542 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = E23367361B4F449E00732542 /* share.png */; };
+		E233674B1B4F449E00732542 /* tut1.png in Resources */ = {isa = PBXBuildFile; fileRef = E23367371B4F449E00732542 /* tut1.png */; };
+		E233674C1B4F449E00732542 /* tut2.png in Resources */ = {isa = PBXBuildFile; fileRef = E23367381B4F449E00732542 /* tut2.png */; };
+		E233674D1B4F449E00732542 /* tut3.png in Resources */ = {isa = PBXBuildFile; fileRef = E23367391B4F449E00732542 /* tut3.png */; };
+		E233674E1B4F449E00732542 /* tut4.png in Resources */ = {isa = PBXBuildFile; fileRef = E233673A1B4F449E00732542 /* tut4.png */; };
+		E23367521B4F6D1700732542 /* LevelPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = E23367501B4F6D1700732542 /* LevelPicker.m */; };
+		E23367531B4F6D1700732542 /* LevelPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23367511B4F6D1700732542 /* LevelPicker.xib */; };
+		E233675A1B4F7F8900732542 /* GameOver.m in Sources */ = {isa = PBXBuildFile; fileRef = E23367581B4F7F8900732542 /* GameOver.m */; };
+		E233675B1B4F7F8900732542 /* GameOver.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23367591B4F7F8900732542 /* GameOver.xib */; };
+		E2E4F4791B4E4CC6006059AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E4F4781B4E4CC6006059AA /* main.m */; };
+		E2E4F47C1B4E4CC6006059AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E4F47B1B4E4CC6006059AA /* AppDelegate.m */; };
+		E2E4F47F1B4E4CC6006059AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E4F47E1B4E4CC6006059AA /* ViewController.m */; };
+		E2E4F4821B4E4CC6006059AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E4F4801B4E4CC6006059AA /* Main.storyboard */; };
+		E2E4F4841B4E4CC6006059AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2E4F4831B4E4CC6006059AA /* Images.xcassets */; };
+		E2E4F4871B4E4CC6006059AA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2E4F4851B4E4CC6006059AA /* LaunchScreen.xib */; };
+		E2E4F4931B4E4CC6006059AA /* SizzleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E4F4921B4E4CC6006059AA /* SizzleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2E4F48D1B4E4CC6006059AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2E4F46B1B4E4CC6006059AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2E4F4721B4E4CC6006059AA;
+			remoteInfo = Sizzle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E23366E81B4F058700732542 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		E23366E91B4F058700732542 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		E23367141B4F0A3E00732542 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../Game.h; sourceTree = "<group>"; };
+		E23367151B4F0A3E00732542 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = ../Game.m; sourceTree = "<group>"; };
+		E23367161B4F0A3E00732542 /* Game.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Game.xib; path = ../Game.xib; sourceTree = "<group>"; };
+		E23367191B4F0A4E00732542 /* Tutorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tutorial.h; path = ../Tutorial.h; sourceTree = "<group>"; };
+		E233671A1B4F0A4E00732542 /* Tutorial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tutorial.m; path = ../Tutorial.m; sourceTree = "<group>"; };
+		E233671B1B4F0A4E00732542 /* Tutorial.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Tutorial.xib; path = ../Tutorial.xib; sourceTree = "<group>"; };
+		E233671E1B4F0A7000732542 /* Dot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
+		E233671F1B4F0A7000732542 /* Dot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
+		E23367231B4F221300732542 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Helper.h; path = ../Helper.h; sourceTree = "<group>"; };
+		E23367241B4F221300732542 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Helper.m; path = ../Helper.m; sourceTree = "<group>"; };
+		E23367271B4F449E00732542 /* b_instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b_instagram.png; sourceTree = "<group>"; };
+		E23367281B4F449E00732542 /* b_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b_play.png; sourceTree = "<group>"; };
+		E23367291B4F449E00732542 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		E233672A1B4F449E00732542 /* bgmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgmusic.mp3; sourceTree = "<group>"; };
+		E233672B1B4F449E00732542 /* dot1burn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dot1burn.png; sourceTree = "<group>"; };
+		E233672C1B4F449E00732542 /* dot1norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dot1norm.png; sourceTree = "<group>"; };
+		E233672D1B4F449E00732542 /* dot2burn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dot2burn.png; sourceTree = "<group>"; };
+		E233672E1B4F449E00732542 /* dot2norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dot2norm.png; sourceTree = "<group>"; };
+		E233672F1B4F449E00732542 /* fire.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = fire.gif; sourceTree = "<group>"; };
+		E23367301B4F449E00732542 /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
+		E23367311B4F449E00732542 /* ic_launcher1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher1.png; sourceTree = "<group>"; };
+		E23367321B4F449E00732542 /* levels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = levels.txt; sourceTree = "<group>"; };
+		E23367331B4F449E00732542 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		E23367341B4F449E00732542 /* logo_beta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_beta.png; sourceTree = "<group>"; };
+		E23367351B4F449E00732542 /* opensource-ios.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "opensource-ios.txt"; sourceTree = "<group>"; };
+		E23367361B4F449E00732542 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+		E23367371B4F449E00732542 /* tut1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tut1.png; sourceTree = "<group>"; };
+		E23367381B4F449E00732542 /* tut2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tut2.png; sourceTree = "<group>"; };
+		E23367391B4F449E00732542 /* tut3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tut3.png; sourceTree = "<group>"; };
+		E233673A1B4F449E00732542 /* tut4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tut4.png; sourceTree = "<group>"; };
+		E233674F1B4F6D1700732542 /* LevelPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelPicker.h; sourceTree = "<group>"; };
+		E23367501B4F6D1700732542 /* LevelPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelPicker.m; sourceTree = "<group>"; };
+		E23367511B4F6D1700732542 /* LevelPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LevelPicker.xib; sourceTree = "<group>"; };
+		E23367571B4F7F8900732542 /* GameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOver.h; path = ../GameOver.h; sourceTree = "<group>"; };
+		E23367581B4F7F8900732542 /* GameOver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameOver.m; path = ../GameOver.m; sourceTree = "<group>"; };
+		E23367591B4F7F8900732542 /* GameOver.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GameOver.xib; path = ../GameOver.xib; sourceTree = "<group>"; };
+		E2E4F4731B4E4CC6006059AA /* Sizzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sizzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2E4F4771B4E4CC6006059AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2E4F4781B4E4CC6006059AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E2E4F47A1B4E4CC6006059AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E2E4F47B1B4E4CC6006059AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E2E4F47D1B4E4CC6006059AA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E2E4F47E1B4E4CC6006059AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E2E4F4811B4E4CC6006059AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2E4F4831B4E4CC6006059AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E2E4F4861B4E4CC6006059AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E2E4F48C1B4E4CC6006059AA /* SizzleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SizzleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2E4F4911B4E4CC6006059AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2E4F4921B4E4CC6006059AA /* SizzleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SizzleTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2E4F4701B4E4CC6006059AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2E4F4891B4E4CC6006059AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E23367261B4F449E00732542 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E23367271B4F449E00732542 /* b_instagram.png */,
+				E23367281B4F449E00732542 /* b_play.png */,
+				E23367291B4F449E00732542 /* bg.png */,
+				E233672A1B4F449E00732542 /* bgmusic.mp3 */,
+				E233672B1B4F449E00732542 /* dot1burn.png */,
+				E233672C1B4F449E00732542 /* dot1norm.png */,
+				E233672D1B4F449E00732542 /* dot2burn.png */,
+				E233672E1B4F449E00732542 /* dot2norm.png */,
+				E233672F1B4F449E00732542 /* fire.gif */,
+				E23367301B4F449E00732542 /* ic_launcher.png */,
+				E23367311B4F449E00732542 /* ic_launcher1.png */,
+				E23367321B4F449E00732542 /* levels.txt */,
+				E23367331B4F449E00732542 /* logo.png */,
+				E23367341B4F449E00732542 /* logo_beta.png */,
+				E23367351B4F449E00732542 /* opensource-ios.txt */,
+				E23367361B4F449E00732542 /* share.png */,
+				E23367371B4F449E00732542 /* tut1.png */,
+				E23367381B4F449E00732542 /* tut2.png */,
+				E23367391B4F449E00732542 /* tut3.png */,
+				E233673A1B4F449E00732542 /* tut4.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E2E4F46A1B4E4CC6006059AA = {
+			isa = PBXGroup;
+			children = (
+				E2E4F4751B4E4CC6006059AA /* Sizzle */,
+				E2E4F48F1B4E4CC6006059AA /* SizzleTests */,
+				E2E4F4741B4E4CC6006059AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2E4F4741B4E4CC6006059AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2E4F4731B4E4CC6006059AA /* Sizzle.app */,
+				E2E4F48C1B4E4CC6006059AA /* SizzleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2E4F4751B4E4CC6006059AA /* Sizzle */ = {
+			isa = PBXGroup;
+			children = (
+				E23367261B4F449E00732542 /* Resources */,
+				E23367231B4F221300732542 /* Helper.h */,
+				E23367241B4F221300732542 /* Helper.m */,
+				E2E4F47A1B4E4CC6006059AA /* AppDelegate.h */,
+				E2E4F47B1B4E4CC6006059AA /* AppDelegate.m */,
+				E2E4F47D1B4E4CC6006059AA /* ViewController.h */,
+				E2E4F47E1B4E4CC6006059AA /* ViewController.m */,
+				E2E4F4801B4E4CC6006059AA /* Main.storyboard */,
+				E23367191B4F0A4E00732542 /* Tutorial.h */,
+				E233671A1B4F0A4E00732542 /* Tutorial.m */,
+				E233671B1B4F0A4E00732542 /* Tutorial.xib */,
+				E233674F1B4F6D1700732542 /* LevelPicker.h */,
+				E23367501B4F6D1700732542 /* LevelPicker.m */,
+				E23367511B4F6D1700732542 /* LevelPicker.xib */,
+				E23367141B4F0A3E00732542 /* Game.h */,
+				E23367151B4F0A3E00732542 /* Game.m */,
+				E23367161B4F0A3E00732542 /* Game.xib */,
+				E233671E1B4F0A7000732542 /* Dot.h */,
+				E233671F1B4F0A7000732542 /* Dot.m */,
+				E23367571B4F7F8900732542 /* GameOver.h */,
+				E23367581B4F7F8900732542 /* GameOver.m */,
+				E23367591B4F7F8900732542 /* GameOver.xib */,
+				E2E4F4831B4E4CC6006059AA /* Images.xcassets */,
+				E2E4F4851B4E4CC6006059AA /* LaunchScreen.xib */,
+				E2E4F4761B4E4CC6006059AA /* Supporting Files */,
+				E23366E81B4F058700732542 /* UIImage+animatedGIF.h */,
+				E23366E91B4F058700732542 /* UIImage+animatedGIF.m */,
+			);
+			path = Sizzle;
+			sourceTree = "<group>";
+		};
+		E2E4F4761B4E4CC6006059AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2E4F4771B4E4CC6006059AA /* Info.plist */,
+				E2E4F4781B4E4CC6006059AA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2E4F48F1B4E4CC6006059AA /* SizzleTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2E4F4921B4E4CC6006059AA /* SizzleTests.m */,
+				E2E4F4901B4E4CC6006059AA /* Supporting Files */,
+			);
+			path = SizzleTests;
+			sourceTree = "<group>";
+		};
+		E2E4F4901B4E4CC6006059AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2E4F4911B4E4CC6006059AA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2E4F4721B4E4CC6006059AA /* Sizzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2E4F4961B4E4CC6006059AA /* Build configuration list for PBXNativeTarget "Sizzle" */;
+			buildPhases = (
+				E2E4F46F1B4E4CC6006059AA /* Sources */,
+				E2E4F4701B4E4CC6006059AA /* Frameworks */,
+				E2E4F4711B4E4CC6006059AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sizzle;
+			productName = Sizzle;
+			productReference = E2E4F4731B4E4CC6006059AA /* Sizzle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2E4F48B1B4E4CC6006059AA /* SizzleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2E4F4991B4E4CC6006059AA /* Build configuration list for PBXNativeTarget "SizzleTests" */;
+			buildPhases = (
+				E2E4F4881B4E4CC6006059AA /* Sources */,
+				E2E4F4891B4E4CC6006059AA /* Frameworks */,
+				E2E4F48A1B4E4CC6006059AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2E4F48E1B4E4CC6006059AA /* PBXTargetDependency */,
+			);
+			name = SizzleTests;
+			productName = SizzleTests;
+			productReference = E2E4F48C1B4E4CC6006059AA /* SizzleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2E4F46B1B4E4CC6006059AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = CarrotCorp;
+				TargetAttributes = {
+					E2E4F4721B4E4CC6006059AA = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					E2E4F48B1B4E4CC6006059AA = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = E2E4F4721B4E4CC6006059AA;
+					};
+				};
+			};
+			buildConfigurationList = E2E4F46E1B4E4CC6006059AA /* Build configuration list for PBXProject "Sizzle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2E4F46A1B4E4CC6006059AA;
+			productRefGroup = E2E4F4741B4E4CC6006059AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2E4F4721B4E4CC6006059AA /* Sizzle */,
+				E2E4F48B1B4E4CC6006059AA /* SizzleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2E4F4711B4E4CC6006059AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E233673F1B4F449E00732542 /* dot1burn.png in Resources */,
+				E23367461B4F449E00732542 /* levels.txt in Resources */,
+				E23367411B4F449E00732542 /* dot2burn.png in Resources */,
+				E23367491B4F449E00732542 /* opensource-ios.txt in Resources */,
+				E2E4F4821B4E4CC6006059AA /* Main.storyboard in Resources */,
+				E233674E1B4F449E00732542 /* tut4.png in Resources */,
+				E233671D1B4F0A4E00732542 /* Tutorial.xib in Resources */,
+				E233674B1B4F449E00732542 /* tut1.png in Resources */,
+				E23367471B4F449E00732542 /* logo.png in Resources */,
+				E23367401B4F449E00732542 /* dot1norm.png in Resources */,
+				E23367431B4F449E00732542 /* fire.gif in Resources */,
+				E233675B1B4F7F8900732542 /* GameOver.xib in Resources */,
+				E233673B1B4F449E00732542 /* b_instagram.png in Resources */,
+				E233673C1B4F449E00732542 /* b_play.png in Resources */,
+				E23367181B4F0A3E00732542 /* Game.xib in Resources */,
+				E233674C1B4F449E00732542 /* tut2.png in Resources */,
+				E233674A1B4F449E00732542 /* share.png in Resources */,
+				E2E4F4871B4E4CC6006059AA /* LaunchScreen.xib in Resources */,
+				E2E4F4841B4E4CC6006059AA /* Images.xcassets in Resources */,
+				E233674D1B4F449E00732542 /* tut3.png in Resources */,
+				E233673D1B4F449E00732542 /* bg.png in Resources */,
+				E23367421B4F449E00732542 /* dot2norm.png in Resources */,
+				E23367451B4F449E00732542 /* ic_launcher1.png in Resources */,
+				E23367481B4F449E00732542 /* logo_beta.png in Resources */,
+				E233673E1B4F449E00732542 /* bgmusic.mp3 in Resources */,
+				E23367531B4F6D1700732542 /* LevelPicker.xib in Resources */,
+				E23367441B4F449E00732542 /* ic_launcher.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2E4F48A1B4E4CC6006059AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2E4F46F1B4E4CC6006059AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23367171B4F0A3E00732542 /* Game.m in Sources */,
+				E233675A1B4F7F8900732542 /* GameOver.m in Sources */,
+				E2E4F47F1B4E4CC6006059AA /* ViewController.m in Sources */,
+				E23366EA1B4F058700732542 /* UIImage+animatedGIF.m in Sources */,
+				E23367251B4F221300732542 /* Helper.m in Sources */,
+				E2E4F47C1B4E4CC6006059AA /* AppDelegate.m in Sources */,
+				E2E4F4791B4E4CC6006059AA /* main.m in Sources */,
+				E23367201B4F0A7000732542 /* Dot.m in Sources */,
+				E23367521B4F6D1700732542 /* LevelPicker.m in Sources */,
+				E233671C1B4F0A4E00732542 /* Tutorial.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2E4F4881B4E4CC6006059AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2E4F4931B4E4CC6006059AA /* SizzleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2E4F48E1B4E4CC6006059AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2E4F4721B4E4CC6006059AA /* Sizzle */;
+			targetProxy = E2E4F48D1B4E4CC6006059AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E2E4F4801B4E4CC6006059AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2E4F4811B4E4CC6006059AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2E4F4851B4E4CC6006059AA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2E4F4861B4E4CC6006059AA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2E4F4941B4E4CC6006059AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2E4F4951B4E4CC6006059AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2E4F4971B4E4CC6006059AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Sizzle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E2E4F4981B4E4CC6006059AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Sizzle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E2E4F49A1B4E4CC6006059AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SizzleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sizzle.app/Sizzle";
+			};
+			name = Debug;
+		};
+		E2E4F49B1B4E4CC6006059AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SizzleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sizzle.app/Sizzle";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2E4F46E1B4E4CC6006059AA /* Build configuration list for PBXProject "Sizzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E4F4941B4E4CC6006059AA /* Debug */,
+				E2E4F4951B4E4CC6006059AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2E4F4961B4E4CC6006059AA /* Build configuration list for PBXNativeTarget "Sizzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E4F4971B4E4CC6006059AA /* Debug */,
+				E2E4F4981B4E4CC6006059AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2E4F4991B4E4CC6006059AA /* Build configuration list for PBXNativeTarget "SizzleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E4F49A1B4E4CC6006059AA /* Debug */,
+				E2E4F49B1B4E4CC6006059AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2E4F46B1B4E4CC6006059AA /* Project object */;
+}
