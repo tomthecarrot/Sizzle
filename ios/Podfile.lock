@@ -1,0 +1,10 @@
+PODS:
+  - VungleSDK-iOS (3.2.0.1)
+
+DEPENDENCIES:
+  - VungleSDK-iOS
+
+SPEC CHECKSUMS:
+  VungleSDK-iOS: e18cf2f47cf0abe096d4b162f583bd197de1ea28
+
+COCOAPODS: 0.39.0

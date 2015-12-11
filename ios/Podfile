@@ -1,0 +1,1 @@
+pod "VungleSDK-iOS"

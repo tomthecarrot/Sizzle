@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78C58EC0482071F79A4DC2F7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B40DCCA2DAD4CA7957B9F246 /* libPods.a */; };
 		E23366EA1B4F058700732542 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = E23366E91B4F058700732542 /* UIImage+animatedGIF.m */; };
 		E23367171B4F0A3E00732542 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = E23367151B4F0A3E00732542 /* Game.m */; };
 		E23367181B4F0A3E00732542 /* Game.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23367161B4F0A3E00732542 /* Game.xib */; };
@@ -27,7 +28,6 @@
 		E23367451B4F449E00732542 /* ic_launcher1.png in Resources */ = {isa = PBXBuildFile; fileRef = E23367311B4F449E00732542 /* ic_launcher1.png */; };
 		E23367461B4F449E00732542 /* levels.txt in Resources */ = {isa = PBXBuildFile; fileRef = E23367321B4F449E00732542 /* levels.txt */; };
 		E23367471B4F449E00732542 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E23367331B4F449E00732542 /* logo.png */; };
-		E23367481B4F449E00732542 /* logo_beta.png in Resources */ = {isa = PBXBuildFile; fileRef = E23367341B4F449E00732542 /* logo_beta.png */; };
 		E23367491B4F449E00732542 /* opensource-ios.txt in Resources */ = {isa = PBXBuildFile; fileRef = E23367351B4F449E00732542 /* opensource-ios.txt */; };
 		E233674A1B4F449E00732542 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = E23367361B4F449E00732542 /* share.png */; };
 		E233674B1B4F449E00732542 /* tut1.png in Resources */ = {isa = PBXBuildFile; fileRef = E23367371B4F449E00732542 /* tut1.png */; };
@@ -45,6 +45,7 @@
 		E2E4F4841B4E4CC6006059AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2E4F4831B4E4CC6006059AA /* Images.xcassets */; };
 		E2E4F4871B4E4CC6006059AA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2E4F4851B4E4CC6006059AA /* LaunchScreen.xib */; };
 		E2E4F4931B4E4CC6006059AA /* SizzleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E4F4921B4E4CC6006059AA /* SizzleTests.m */; };
+		E2E505651C1B7438001FDAAD /* vungle-appid in Resources */ = {isa = PBXBuildFile; fileRef = E2E505641C1B7438001FDAAD /* vungle-appid */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11217DBF0F91C346A85DA5DA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B40DCCA2DAD4CA7957B9F246 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19081FB75018CD919280036 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E23366E81B4F058700732542 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
 		E23366E91B4F058700732542 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 		E23367141B4F0A3E00732542 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../Game.h; sourceTree = "<group>"; };
@@ -83,7 +87,6 @@
 		E23367311B4F449E00732542 /* ic_launcher1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher1.png; sourceTree = "<group>"; };
 		E23367321B4F449E00732542 /* levels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = levels.txt; sourceTree = "<group>"; };
 		E23367331B4F449E00732542 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		E23367341B4F449E00732542 /* logo_beta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_beta.png; sourceTree = "<group>"; };
 		E23367351B4F449E00732542 /* opensource-ios.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "opensource-ios.txt"; sourceTree = "<group>"; };
 		E23367361B4F449E00732542 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
 		E23367371B4F449E00732542 /* tut1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tut1.png; sourceTree = "<group>"; };
@@ -109,6 +112,7 @@
 		E2E4F48C1B4E4CC6006059AA /* SizzleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SizzleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E4F4911B4E4CC6006059AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2E4F4921B4E4CC6006059AA /* SizzleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SizzleTests.m; sourceTree = "<group>"; };
+		E2E505641C1B7438001FDAAD /* vungle-appid */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "vungle-appid"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78C58EC0482071F79A4DC2F7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +134,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47120EAC2D61313C8E288B9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C19081FB75018CD919280036 /* Pods.debug.xcconfig */,
+				11217DBF0F91C346A85DA5DA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6A811EE620272CAAAA11D030 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B40DCCA2DAD4CA7957B9F246 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E23367261B4F449E00732542 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,7 +167,6 @@
 				E23367311B4F449E00732542 /* ic_launcher1.png */,
 				E23367321B4F449E00732542 /* levels.txt */,
 				E23367331B4F449E00732542 /* logo.png */,
-				E23367341B4F449E00732542 /* logo_beta.png */,
 				E23367351B4F449E00732542 /* opensource-ios.txt */,
 				E23367361B4F449E00732542 /* share.png */,
 				E23367371B4F449E00732542 /* tut1.png */,
@@ -162,6 +183,8 @@
 				E2E4F4751B4E4CC6006059AA /* Sizzle */,
 				E2E4F48F1B4E4CC6006059AA /* SizzleTests */,
 				E2E4F4741B4E4CC6006059AA /* Products */,
+				47120EAC2D61313C8E288B9C /* Pods */,
+				6A811EE620272CAAAA11D030 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -182,6 +205,7 @@
 				E23367241B4F221300732542 /* Helper.m */,
 				E2E4F47A1B4E4CC6006059AA /* AppDelegate.h */,
 				E2E4F47B1B4E4CC6006059AA /* AppDelegate.m */,
+				E2E505641C1B7438001FDAAD /* vungle-appid */,
 				E2E4F47D1B4E4CC6006059AA /* ViewController.h */,
 				E2E4F47E1B4E4CC6006059AA /* ViewController.m */,
 				E2E4F4801B4E4CC6006059AA /* Main.storyboard */,
@@ -241,9 +265,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2E4F4961B4E4CC6006059AA /* Build configuration list for PBXNativeTarget "Sizzle" */;
 			buildPhases = (
+				C50BF03BA446EA9CE72F3620 /* Check Pods Manifest.lock */,
 				E2E4F46F1B4E4CC6006059AA /* Sources */,
 				E2E4F4701B4E4CC6006059AA /* Frameworks */,
 				E2E4F4711B4E4CC6006059AA /* Resources */,
+				CE6C147655912B07E112DADD /* Embed Pods Frameworks */,
+				184AE0FC8270B87CB870B0A6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -335,9 +362,9 @@
 				E2E4F4841B4E4CC6006059AA /* Images.xcassets in Resources */,
 				E233674D1B4F449E00732542 /* tut3.png in Resources */,
 				E233673D1B4F449E00732542 /* bg.png in Resources */,
+				E2E505651C1B7438001FDAAD /* vungle-appid in Resources */,
 				E23367421B4F449E00732542 /* dot2norm.png in Resources */,
 				E23367451B4F449E00732542 /* ic_launcher1.png in Resources */,
-				E23367481B4F449E00732542 /* logo_beta.png in Resources */,
 				E233673E1B4F449E00732542 /* bgmusic.mp3 in Resources */,
 				E23367531B4F6D1700732542 /* LevelPicker.xib in Resources */,
 				E23367441B4F449E00732542 /* ic_launcher.png in Resources */,
@@ -352,6 +379,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		184AE0FC8270B87CB870B0A6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C50BF03BA446EA9CE72F3620 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CE6C147655912B07E112DADD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E2E4F46F1B4E4CC6006059AA /* Sources */ = {
@@ -493,6 +568,7 @@
 		};
 		E2E4F4971B4E4CC6006059AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C19081FB75018CD919280036 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Sizzle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -503,6 +579,7 @@
 		};
 		E2E4F4981B4E4CC6006059AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11217DBF0F91C346A85DA5DA /* Pods.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Sizzle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
