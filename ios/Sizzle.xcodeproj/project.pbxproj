@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		78C58EC0482071F79A4DC2F7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B40DCCA2DAD4CA7957B9F246 /* libPods.a */; };
+		E203BE8A1C1B762E008F59C3 /* vungle-appid.private in Resources */ = {isa = PBXBuildFile; fileRef = E203BE891C1B762E008F59C3 /* vungle-appid.private */; };
 		E23366EA1B4F058700732542 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = E23366E91B4F058700732542 /* UIImage+animatedGIF.m */; };
 		E23367171B4F0A3E00732542 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = E23367151B4F0A3E00732542 /* Game.m */; };
 		E23367181B4F0A3E00732542 /* Game.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23367161B4F0A3E00732542 /* Game.xib */; };
@@ -45,7 +46,6 @@
 		E2E4F4841B4E4CC6006059AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2E4F4831B4E4CC6006059AA /* Images.xcassets */; };
 		E2E4F4871B4E4CC6006059AA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2E4F4851B4E4CC6006059AA /* LaunchScreen.xib */; };
 		E2E4F4931B4E4CC6006059AA /* SizzleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E4F4921B4E4CC6006059AA /* SizzleTests.m */; };
-		E2E505651C1B7438001FDAAD /* vungle-appid in Resources */ = {isa = PBXBuildFile; fileRef = E2E505641C1B7438001FDAAD /* vungle-appid */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +62,7 @@
 		11217DBF0F91C346A85DA5DA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B40DCCA2DAD4CA7957B9F246 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19081FB75018CD919280036 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E203BE891C1B762E008F59C3 /* vungle-appid.private */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "vungle-appid.private"; sourceTree = "<group>"; };
 		E23366E81B4F058700732542 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
 		E23366E91B4F058700732542 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 		E23367141B4F0A3E00732542 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../Game.h; sourceTree = "<group>"; };
@@ -112,7 +113,6 @@
 		E2E4F48C1B4E4CC6006059AA /* SizzleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SizzleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E4F4911B4E4CC6006059AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2E4F4921B4E4CC6006059AA /* SizzleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SizzleTests.m; sourceTree = "<group>"; };
-		E2E505641C1B7438001FDAAD /* vungle-appid */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "vungle-appid"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,12 +200,12 @@
 		E2E4F4751B4E4CC6006059AA /* Sizzle */ = {
 			isa = PBXGroup;
 			children = (
+				E203BE891C1B762E008F59C3 /* vungle-appid.private */,
 				E23367261B4F449E00732542 /* Resources */,
 				E23367231B4F221300732542 /* Helper.h */,
 				E23367241B4F221300732542 /* Helper.m */,
 				E2E4F47A1B4E4CC6006059AA /* AppDelegate.h */,
 				E2E4F47B1B4E4CC6006059AA /* AppDelegate.m */,
-				E2E505641C1B7438001FDAAD /* vungle-appid */,
 				E2E4F47D1B4E4CC6006059AA /* ViewController.h */,
 				E2E4F47E1B4E4CC6006059AA /* ViewController.m */,
 				E2E4F4801B4E4CC6006059AA /* Main.storyboard */,
@@ -341,6 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E203BE8A1C1B762E008F59C3 /* vungle-appid.private in Resources */,
 				E233673F1B4F449E00732542 /* dot1burn.png in Resources */,
 				E23367461B4F449E00732542 /* levels.txt in Resources */,
 				E23367411B4F449E00732542 /* dot2burn.png in Resources */,
@@ -362,7 +363,6 @@
 				E2E4F4841B4E4CC6006059AA /* Images.xcassets in Resources */,
 				E233674D1B4F449E00732542 /* tut3.png in Resources */,
 				E233673D1B4F449E00732542 /* bg.png in Resources */,
-				E2E505651C1B7438001FDAAD /* vungle-appid in Resources */,
 				E23367421B4F449E00732542 /* dot2norm.png in Resources */,
 				E23367451B4F449E00732542 /* ic_launcher1.png in Resources */,
 				E233673E1B4F449E00732542 /* bgmusic.mp3 in Resources */,

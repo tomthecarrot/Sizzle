@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -12,19 +13,18 @@
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="BuM-rJ-Bsh">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <animations/>
                     <constraints>
                         <constraint firstAttribute="width" constant="375" id="aFp-Mf-JYG"/>
                         <constraint firstAttribute="height" constant="667" id="hGb-Lv-MGS"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logo_beta.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kz7-rq-obC">
-                    <rect key="frame" x="21" y="98" width="333" height="178"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="178" id="p3c-BJ-sMJ"/>
-                        <constraint firstAttribute="width" constant="333" id="zB1-vi-Bls"/>
-                    </constraints>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kz7-rq-obC">
+                    <rect key="frame" x="21" y="130" width="333" height="95"/>
+                    <animations/>
                 </imageView>
             </subviews>
+            <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="Kz7-rq-obC" secondAttribute="trailing" constant="21" id="T53-Uf-a3w"/>
@@ -37,6 +37,6 @@
     </objects>
     <resources>
         <image name="bg.png" width="1080" height="1920"/>
-        <image name="logo_beta.png" width="500" height="250"/>
+        <image name="logo.png" width="473" height="65"/>
     </resources>
 </document>

@@ -24,6 +24,12 @@ int _score = 0;
     return self;
 }
 
+- (IBAction)play:(id)sender {
+    // Play Vungle ad
+    VungleSDK *sdk = [VungleSDK sharedSDK];
+    [sdk playAd:self error:nil];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

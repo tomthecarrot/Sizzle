@@ -40,7 +40,7 @@ AVAudioPlayer *music;
     NSString *txt = [[NSString alloc] initWithContentsOfFile:path usedEncoding:nil error:nil];
     
     // Show alert
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Open Source" message:txt
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Credits" message:txt
                                                    delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
     [alert show];
 }
@@ -55,7 +55,7 @@ AVAudioPlayer *music;
     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"bgmusic" ofType:@"mp3"]];
     music = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
     music.numberOfLoops = -1; // forever looping
-    //[music play];
+    [music play];
 }
 
 - (void)didReceiveMemoryWarning {

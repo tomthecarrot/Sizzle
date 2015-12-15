@@ -17,6 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // Vungle start
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"vungle-appid" ofType:@"private"];
+    NSString *appID = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    VungleSDK *sdk = [VungleSDK sharedSDK];
+    [sdk startWithAppId:appID];
+    
     return YES;
 }
 
