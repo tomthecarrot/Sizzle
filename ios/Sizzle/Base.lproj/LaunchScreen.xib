@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,27 +12,50 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="BuM-rJ-Bsh">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="BuM-rJ-Bsh">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <animations/>
                     <constraints>
                         <constraint firstAttribute="width" constant="375" id="aFp-Mf-JYG"/>
                         <constraint firstAttribute="height" constant="667" id="hGb-Lv-MGS"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="aFp-Mf-JYG"/>
+                            <exclude reference="hGb-Lv-MGS"/>
+                        </mask>
+                    </variation>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kz7-rq-obC">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kz7-rq-obC">
                     <rect key="frame" x="21" y="130" width="333" height="95"/>
                     <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="95" id="5PA-06-xxX"/>
+                        <constraint firstAttribute="width" secondItem="Kz7-rq-obC" secondAttribute="height" multiplier="333:95" id="WDw-rZ-SuH"/>
+                        <constraint firstAttribute="width" constant="333" id="aQv-0Z-Kkz"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="Kz7-rq-obC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1Wx-ee-zjP"/>
+                <constraint firstItem="Kz7-rq-obC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="130" id="HJO-VE-2nn"/>
                 <constraint firstAttribute="trailing" secondItem="Kz7-rq-obC" secondAttribute="trailing" constant="21" id="T53-Uf-a3w"/>
+                <constraint firstAttribute="bottom" secondItem="BuM-rJ-Bsh" secondAttribute="bottom" id="TFd-kh-Khf"/>
+                <constraint firstAttribute="trailing" secondItem="BuM-rJ-Bsh" secondAttribute="trailing" id="Uf9-Rr-QJA"/>
+                <constraint firstItem="BuM-rJ-Bsh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="f36-af-tsi"/>
+                <constraint firstItem="BuM-rJ-Bsh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="huL-DV-Zfy"/>
                 <constraint firstItem="Kz7-rq-obC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="21" id="uJf-Fr-7Qy"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="T53-Uf-a3w"/>
+                    <exclude reference="uJf-Fr-7Qy"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="547.5" y="454.5"/>
         </view>
     </objects>
