@@ -97,8 +97,11 @@ typedef enum {
     }
     
     // Transfer to GameOver
+    UIViewController *parent = self.presentingViewController;
     GameOver *gameover = [[GameOver alloc] initWithScore:score];
-    [self presentViewController:gameover animated:YES completion:nil];
+    [self dismissViewControllerAnimated:NO completion:^{
+        [parent presentViewController:gameover animated:YES completion:nil];
+    }];
 }
 
 - (void)addTime {
