@@ -18,18 +18,21 @@
 
 @end
 
-@implementation Game
+@implementation Game {
+    NSTimer *timer;
+    int currentLevel; // this level
+    int maxLevel; // max level user has ever reached
+    int score; // current score
+    int maxDots; // maximum amount of dots for this game. -1 = unlimited.
+    int numDotsTotal; // number of dots ever on screen (during this game)
+    int totalTime; // amount of 100ms intervals in total game time
+    int maxX; // maximum X value on-screen
+    int maxY; // maximum Y values on-screen
+    
+}
 static const int dotSize = 100;
-int currentLevel = 1; // this level
-int maxLevel = 1; // max level user has ever reached
-int score = 0; // current score
-int gameTime = 0; // amount of 100ms intervals this game has been running for
-int fireLimit = 0; // minimum Y coordinate value for fire burn-up
-int maxDots = 0; // maximum amount of dots for this game. -1 = unlimited.
-int numDotsTotal = 0; // number of dots ever on screen (during this game)
-int totalTime = 0; // amount of 100ms intervals in total game time
-int maxX = 0;
-int maxY = 0;
+static int gameTime; // amount of 100ms intervals this game has been running for
+static int fireLimit; // minimum Y coordinate value for fire burn-up
 
 typedef enum {
     NORMAL, EMOTICON
@@ -50,7 +53,10 @@ typedef enum {
     NSArray *levelData = [levelString componentsSeparatedByString:@"/"];
     
     // Initialize variables
+    score = 0;
+    gameTime = 0;
     maxDots = [[levelData objectAtIndex:0] intValue];
+    numDotsTotal = 0;
     totalTime = [[levelData objectAtIndex:1] intValue] * 10;
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
     maxX = screenBounds.size.width;
@@ -83,8 +89,6 @@ typedef enum {
 }
 
 - (void)endGame {
-    //[self dismissViewControllerAnimated:YES completion:nil];
-    
     // Next level if earned...
     if (score > 0) {
         int newLevel = maxLevel;
@@ -114,6 +118,7 @@ typedef enum {
     
     if (gameTime >= totalTime || score <= 0) {
         [self endGame];
+        [timer invalidate];
     }
 }
 
@@ -129,7 +134,7 @@ typedef enum {
     [super viewDidLoad];
     
     // Start game timer
-    [NSTimer scheduledTimerWithTimeInterval:0.1
+    timer = [NSTimer scheduledTimerWithTimeInterval:0.1
                                      target:self
                                    selector:@selector(addTime)
                                    userInfo:nil
