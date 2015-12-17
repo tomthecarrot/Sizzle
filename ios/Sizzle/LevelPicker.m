@@ -27,12 +27,7 @@ const int totalLevels = 6;
     game = nil;
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    // Animate fire GIF view
-    [Helper animateFire:fireView];
-    
+- (void)getCurrentLevel {
     // Get current level
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     currentLevel = (int)[defaults integerForKey:@"currentLevel"];
@@ -45,14 +40,33 @@ const int totalLevels = 6;
         [defaults setInteger:currentLevel forKey:@"currentLevel"];
         [defaults synchronize];
     }
-    
-    // Lock future levels
+}
+
+- (void)lockFutureLevels {
     UIColor *color = [[UIColor alloc] initWithWhite:0.3 alpha:1.0];
-    for (int i = totalLevels; i > currentLevel; i--) {
+    for (int i = 0; i <= currentLevel; i++) {
+        // Set each button to be enabled, if within currentLevel range
         UIButton *button = (UIButton *)[self.view viewWithTag:i];
         [button setTintColor:color];
-        [button setEnabled:false];
+        [button setEnabled:true];
     }
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    // Get current level & lock future levels
+    [self getCurrentLevel];
+    [self lockFutureLevels];
+}
+
+- (void)viewDidLoad {
+    // Animate fire GIF view
+    [Helper animateFire:fireView];
+    
+    // Get current level & lock future levels
+    [self getCurrentLevel];
+    [self lockFutureLevels];
 }
 
 - (void)didReceiveMemoryWarning {
