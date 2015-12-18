@@ -55,6 +55,9 @@ const int totalLevels = 6;
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
+    // Continue playing music (if returning from an ad)
+    [Helper playMusic];
+    
     // Get current level & lock future levels
     [self getCurrentLevel];
     [self lockFutureLevels];

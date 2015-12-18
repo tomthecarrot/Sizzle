@@ -8,9 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface Helper : NSObject
 
 + (void)animateFire:(UIImageView *)fireView;
++ (void)startMusic;
++ (void)playMusic;
++ (void)pauseMusic;
 
 @end

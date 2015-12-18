@@ -24,13 +24,18 @@ int _score = 0;
     return self;
 }
 
+- (void)playAd:(UIViewController *)parent {
+    VungleSDK *sdk = [VungleSDK sharedSDK];
+    [sdk playAd:parent error:nil];
+}
+
 - (IBAction)play:(id)sender {
     // Transfer to Vungle ad, then back to main menu
     UIViewController *parent = self.presentingViewController;
     [self dismissViewControllerAnimated:NO completion:^{
-        // Play Vungle ad
-        VungleSDK *sdk = [VungleSDK sharedSDK];
-        [sdk playAd:parent error:nil];
+        // Pause music, then play Vungle ad
+        [Helper pauseMusic];
+        [self playAd:parent];
     }];
 }
 

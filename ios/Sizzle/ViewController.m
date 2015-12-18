@@ -11,7 +11,6 @@
 #import "Game.h"
 #import "LevelPicker.h"
 #import "Helper.h"
-#import <AVFoundation/AVFoundation.h>
 
 @interface ViewController () {
     IBOutlet UIImageView *fireView;
@@ -20,7 +19,6 @@
 @end
 
 @implementation ViewController
-AVAudioPlayer *music;
 
 - (IBAction)play:(id)sender {
     LevelPicker *game = [[LevelPicker alloc] init];
@@ -52,10 +50,7 @@ AVAudioPlayer *music;
     [Helper animateFire:fireView];
     
     // Start music
-    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"bgmusic" ofType:@"mp3"]];
-    music = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
-    music.numberOfLoops = -1; // forever looping
-    [music play];
+    [Helper startMusic];
 }
 
 - (void)didReceiveMemoryWarning {
