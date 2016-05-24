@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <VungleSDK/VungleSDK.h>
 
 @interface GameOver : UIViewController {
     IBOutlet UILabel *scoreView;

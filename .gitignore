@@ -1,4 +1,5 @@
 .DS_Store
+*.private
 /android/.gradle
 /android/local.properties
 /android/.idea/workspace.xml

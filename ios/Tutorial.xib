@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Tutorial">
@@ -18,7 +18,6 @@
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b8q-r7-STU">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <animations/>
                     <constraints>
                         <constraint firstAttribute="height" constant="667" id="7Z6-bx-Zf2"/>
                         <constraint firstAttribute="width" constant="375" id="qoC-9C-ofO"/>
@@ -26,7 +25,6 @@
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JM-w3-8Jr">
                     <rect key="frame" x="275" y="567" width="75" height="75"/>
-                    <animations/>
                     <constraints>
                         <constraint firstAttribute="height" constant="75" id="PM0-uy-5M5"/>
                         <constraint firstAttribute="width" constant="75" id="tjE-al-uML"/>
@@ -39,7 +37,6 @@
                     </connections>
                 </button>
             </subviews>
-            <animations/>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="b8q-r7-STU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9fd-P1-DDL"/>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
@@ -17,16 +17,19 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fire.gif" translatesAutoresizingMaskIntoConstraints="NO" id="bMX-AL-dmm">
-                    <rect key="frame" x="0.0" y="144" width="375" height="523"/>
-                    <animations/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="fire.gif" translatesAutoresizingMaskIntoConstraints="NO" id="bMX-AL-dmm">
+                    <rect key="frame" x="0.0" y="113" width="375" height="554"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="375" id="GH8-iR-kTs"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="GH8-iR-kTs"/>
+                        </mask>
+                    </variation>
                 </imageView>
                 <button opaque="NO" tag="4" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeT-sA-XAk">
                     <rect key="frame" x="26" y="315" width="100" height="100"/>
-                    <animations/>
                     <state key="normal" image="b_play.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -36,7 +39,6 @@
                 </button>
                 <button opaque="NO" tag="5" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30b-Wk-OtU">
                     <rect key="frame" x="137" y="315" width="100" height="100"/>
-                    <animations/>
                     <state key="normal" image="b_play.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -46,7 +48,6 @@
                 </button>
                 <button opaque="NO" tag="6" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="md0-wz-DnY">
                     <rect key="frame" x="249" y="315" width="100" height="100"/>
-                    <animations/>
                     <state key="normal" image="b_play.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -56,7 +57,6 @@
                 </button>
                 <button opaque="NO" tag="1" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6e2-0m-vfi">
                     <rect key="frame" x="26" y="192" width="100" height="100"/>
-                    <animations/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="6e2-0m-vfi" secondAttribute="height" multiplier="1:1" id="LQG-Qv-TCo"/>
                     </constraints>
@@ -69,7 +69,6 @@
                 </button>
                 <button opaque="NO" tag="2" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRV-i3-6J4">
                     <rect key="frame" x="137" y="192" width="100" height="100"/>
-                    <animations/>
                     <state key="normal" image="b_play.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -79,7 +78,6 @@
                 </button>
                 <button opaque="NO" tag="3" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5I-8x-6Cr">
                     <rect key="frame" x="249" y="192" width="100" height="100"/>
-                    <animations/>
                     <state key="normal" image="b_play.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -88,11 +86,9 @@
                     </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="KW3-Lr-7jY">
-                    <rect key="frame" x="45" y="40" width="284" height="90"/>
-                    <animations/>
+                    <rect key="frame" x="45" y="40" width="284" height="65"/>
                 </imageView>
             </subviews>
-            <animations/>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="B5I-8x-6Cr" firstAttribute="centerX" secondItem="6e2-0m-vfi" secondAttribute="centerX" id="7Je-or-Ehf"/>
@@ -132,15 +128,19 @@
                 <constraint firstItem="KW3-Lr-7jY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="qbn-iU-0dU"/>
                 <constraint firstItem="30b-Wk-OtU" firstAttribute="leading" secondItem="GRV-i3-6J4" secondAttribute="leading" id="txz-dV-ec5"/>
                 <constraint firstItem="30b-Wk-OtU" firstAttribute="width" secondItem="6e2-0m-vfi" secondAttribute="width" id="u15-yG-UBY"/>
+                <constraint firstItem="bMX-AL-dmm" firstAttribute="top" secondItem="KW3-Lr-7jY" secondAttribute="bottom" constant="8" id="v8H-ZV-Xjq"/>
                 <constraint firstItem="TeT-sA-XAk" firstAttribute="width" secondItem="6e2-0m-vfi" secondAttribute="width" id="yVb-tH-uhI"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <variation key="default">
                 <mask key="constraints">
+                    <exclude reference="fg8-ab-3p1"/>
+                    <exclude reference="RRL-J4-3Mc"/>
                     <exclude reference="mH4-mT-rNO"/>
                     <exclude reference="7Je-or-Ehf"/>
                     <exclude reference="9AE-hm-opb"/>
+                    <exclude reference="NxK-KS-RQc"/>
                     <exclude reference="9vv-12-lGK"/>
                 </mask>
             </variation>

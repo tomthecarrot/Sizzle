@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Chartboost/Chartboost.h>
 
 @interface AppDelegate ()
 
@@ -18,11 +19,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    // Vungle start
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"vungle-appid" ofType:@"private"];
-    NSString *appID = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    VungleSDK *sdk = [VungleSDK sharedSDK];
-    [sdk startWithAppId:appID];
+    // Initialize Chartboost ads
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"chartboost" ofType:@"private"];
+    NSString *contents = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    NSArray *lines = [contents componentsSeparatedByString:@"\n"];
+    NSString *appId = [lines objectAtIndex:0];
+    NSString *appSig = [lines objectAtIndex:1];
+    [Chartboost startWithAppId:appId appSignature:appSig delegate:self]; // OPEN SOURCE NOTE: this line can be commented if you do not have Chartboost ads set up.
     
     return YES;
 }

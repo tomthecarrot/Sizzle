@@ -8,6 +8,7 @@
 
 #import "GameOver.h"
 #import "Helper.h"
+#import <Chartboost/Chartboost.h>
 
 @interface GameOver () {
     IBOutlet UIImageView *fireView;
@@ -24,19 +25,10 @@ int _score = 0;
     return self;
 }
 
-- (void)playAd:(UIViewController *)parent {
-    VungleSDK *sdk = [VungleSDK sharedSDK];
-    [sdk playAd:parent error:nil];
-}
-
 - (IBAction)play:(id)sender {
-    // Transfer to Vungle ad, then back to main menu
-    UIViewController *parent = self.presentingViewController;
-    [self dismissViewControllerAnimated:NO completion:^{
-        // Pause music, then play Vungle ad
-        [Helper pauseMusic];
-        [self playAd:parent];
-    }];
+    // Show Chartboost ad & transition back to main menu
+    [Chartboost showInterstitial:CBLocationGameOver];
+    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 - (void)viewDidLoad {

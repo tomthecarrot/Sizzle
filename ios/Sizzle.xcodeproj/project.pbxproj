@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		78C58EC0482071F79A4DC2F7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B40DCCA2DAD4CA7957B9F246 /* libPods.a */; };
-		E203BE8A1C1B762E008F59C3 /* vungle-appid.private in Resources */ = {isa = PBXBuildFile; fileRef = E203BE891C1B762E008F59C3 /* vungle-appid.private */; };
 		E23366EA1B4F058700732542 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = E23366E91B4F058700732542 /* UIImage+animatedGIF.m */; };
 		E23367171B4F0A3E00732542 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = E23367151B4F0A3E00732542 /* Game.m */; };
 		E23367181B4F0A3E00732542 /* Game.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23367161B4F0A3E00732542 /* Game.xib */; };
@@ -39,6 +37,12 @@
 		E23367531B4F6D1700732542 /* LevelPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23367511B4F6D1700732542 /* LevelPicker.xib */; };
 		E233675A1B4F7F8900732542 /* GameOver.m in Sources */ = {isa = PBXBuildFile; fileRef = E23367581B4F7F8900732542 /* GameOver.m */; };
 		E233675B1B4F7F8900732542 /* GameOver.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23367591B4F7F8900732542 /* GameOver.xib */; };
+		E28AB14A1CF3691E00D772CB /* chartboost.private in Resources */ = {isa = PBXBuildFile; fileRef = E28AB1491CF3691E00D772CB /* chartboost.private */; };
+		E29EFE6A1CEEC961003C1079 /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29EFE691CEEC961003C1079 /* Chartboost.framework */; };
+		E29EFE6C1CEEC973003C1079 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29EFE6B1CEEC973003C1079 /* StoreKit.framework */; };
+		E29EFE6E1CEEC97D003C1079 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29EFE6D1CEEC97D003C1079 /* Foundation.framework */; };
+		E29EFE701CEEC981003C1079 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29EFE6F1CEEC981003C1079 /* CoreGraphics.framework */; };
+		E29EFE721CEEC984003C1079 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29EFE711CEEC984003C1079 /* UIKit.framework */; };
 		E2E4F4791B4E4CC6006059AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E4F4781B4E4CC6006059AA /* main.m */; };
 		E2E4F47C1B4E4CC6006059AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E4F47B1B4E4CC6006059AA /* AppDelegate.m */; };
 		E2E4F47F1B4E4CC6006059AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E4F47E1B4E4CC6006059AA /* ViewController.m */; };
@@ -59,10 +63,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		11217DBF0F91C346A85DA5DA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		B40DCCA2DAD4CA7957B9F246 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C19081FB75018CD919280036 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		E203BE891C1B762E008F59C3 /* vungle-appid.private */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "vungle-appid.private"; sourceTree = "<group>"; };
 		E23366E81B4F058700732542 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
 		E23366E91B4F058700732542 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 		E23367141B4F0A3E00732542 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../Game.h; sourceTree = "<group>"; };
@@ -100,6 +100,12 @@
 		E23367571B4F7F8900732542 /* GameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOver.h; path = ../GameOver.h; sourceTree = "<group>"; };
 		E23367581B4F7F8900732542 /* GameOver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameOver.m; path = ../GameOver.m; sourceTree = "<group>"; };
 		E23367591B4F7F8900732542 /* GameOver.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GameOver.xib; path = ../GameOver.xib; sourceTree = "<group>"; };
+		E28AB1491CF3691E00D772CB /* chartboost.private */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = chartboost.private; path = ../../../Sizzle/chartboost.private; sourceTree = "<group>"; };
+		E29EFE691CEEC961003C1079 /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chartboost.framework; sourceTree = "<group>"; };
+		E29EFE6B1CEEC973003C1079 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		E29EFE6D1CEEC97D003C1079 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E29EFE6F1CEEC981003C1079 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E29EFE711CEEC984003C1079 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E2E4F4731B4E4CC6006059AA /* Sizzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sizzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E4F4771B4E4CC6006059AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2E4F4781B4E4CC6006059AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -120,7 +126,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78C58EC0482071F79A4DC2F7 /* libPods.a in Frameworks */,
+				E29EFE721CEEC984003C1079 /* UIKit.framework in Frameworks */,
+				E29EFE701CEEC981003C1079 /* CoreGraphics.framework in Frameworks */,
+				E29EFE6E1CEEC97D003C1079 /* Foundation.framework in Frameworks */,
+				E29EFE6C1CEEC973003C1079 /* StoreKit.framework in Frameworks */,
+				E29EFE6A1CEEC961003C1079 /* Chartboost.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,19 +144,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		47120EAC2D61313C8E288B9C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C19081FB75018CD919280036 /* Pods.debug.xcconfig */,
-				11217DBF0F91C346A85DA5DA /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		6A811EE620272CAAAA11D030 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B40DCCA2DAD4CA7957B9F246 /* libPods.a */,
+				E29EFE711CEEC984003C1079 /* UIKit.framework */,
+				E29EFE6F1CEEC981003C1079 /* CoreGraphics.framework */,
+				E29EFE6D1CEEC97D003C1079 /* Foundation.framework */,
+				E29EFE6B1CEEC973003C1079 /* StoreKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -180,10 +184,10 @@
 		E2E4F46A1B4E4CC6006059AA = {
 			isa = PBXGroup;
 			children = (
+				E29EFE691CEEC961003C1079 /* Chartboost.framework */,
 				E2E4F4751B4E4CC6006059AA /* Sizzle */,
 				E2E4F48F1B4E4CC6006059AA /* SizzleTests */,
 				E2E4F4741B4E4CC6006059AA /* Products */,
-				47120EAC2D61313C8E288B9C /* Pods */,
 				6A811EE620272CAAAA11D030 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -200,7 +204,7 @@
 		E2E4F4751B4E4CC6006059AA /* Sizzle */ = {
 			isa = PBXGroup;
 			children = (
-				E203BE891C1B762E008F59C3 /* vungle-appid.private */,
+				E28AB1491CF3691E00D772CB /* chartboost.private */,
 				E23367261B4F449E00732542 /* Resources */,
 				E23367231B4F221300732542 /* Helper.h */,
 				E23367241B4F221300732542 /* Helper.m */,
@@ -265,12 +269,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2E4F4961B4E4CC6006059AA /* Build configuration list for PBXNativeTarget "Sizzle" */;
 			buildPhases = (
-				C50BF03BA446EA9CE72F3620 /* Check Pods Manifest.lock */,
 				E2E4F46F1B4E4CC6006059AA /* Sources */,
 				E2E4F4701B4E4CC6006059AA /* Frameworks */,
 				E2E4F4711B4E4CC6006059AA /* Resources */,
-				CE6C147655912B07E112DADD /* Embed Pods Frameworks */,
-				184AE0FC8270B87CB870B0A6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -341,7 +342,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E203BE8A1C1B762E008F59C3 /* vungle-appid.private in Resources */,
 				E233673F1B4F449E00732542 /* dot1burn.png in Resources */,
 				E23367461B4F449E00732542 /* levels.txt in Resources */,
 				E23367411B4F449E00732542 /* dot2burn.png in Resources */,
@@ -354,6 +354,7 @@
 				E23367401B4F449E00732542 /* dot1norm.png in Resources */,
 				E23367431B4F449E00732542 /* fire.gif in Resources */,
 				E233675B1B4F7F8900732542 /* GameOver.xib in Resources */,
+				E28AB14A1CF3691E00D772CB /* chartboost.private in Resources */,
 				E233673B1B4F449E00732542 /* b_instagram.png in Resources */,
 				E233673C1B4F449E00732542 /* b_play.png in Resources */,
 				E23367181B4F0A3E00732542 /* Game.xib in Resources */,
@@ -379,54 +380,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		184AE0FC8270B87CB870B0A6 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C50BF03BA446EA9CE72F3620 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		CE6C147655912B07E112DADD /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E2E4F46F1B4E4CC6006059AA /* Sources */ = {
@@ -568,22 +521,30 @@
 		};
 		E2E4F4971B4E4CC6006059AA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C19081FB75018CD919280036 /* Pods.debug.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Sizzle/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carrotcorp.sizzle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		E2E4F4981B4E4CC6006059AA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11217DBF0F91C346A85DA5DA /* Pods.release.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Sizzle/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carrotcorp.sizzle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
