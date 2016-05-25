@@ -8,7 +8,7 @@ Challenge your friends and see who can keep the dots out of fire!
 
 ## Platforms
 * Android ([live on Google Play](https://play.google.com/store/apps/details?id=com.carrotcorp.sizzle))
-* iOS (WIP)
+* iOS ([live on the App Store](https://itunes.apple.com/us/app/sizzle-game-of-fire/id1016164470?mt=8))
 
 ## Open Source
 This project is open source under the **GPL v3.0 License**, so feel free to make changes.  
