@@ -16,6 +16,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.chartboost.sdk.Chartboost;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -49,7 +51,7 @@ public class Game extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
-        // Initialize
+        // Initialize game
         dotSize2 = dotSize / 2;
         int[] res = getScreenResolution();
         maxX = res[0] - dotSize;
@@ -71,22 +73,6 @@ public class Game extends Activity {
 
         // Start game!
         startGame();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-
-        // Stop playing music
-        Music.stop();
-
-        // Cancel & End the game if it's running
-        if (gameRunning) {
-            endGame(true);
-        }
-
-        // Close Game activity
-        finish();
     }
 
     /**
@@ -297,6 +283,24 @@ public class Game extends Activity {
             }
         };
         new Thread(r).start();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        Chartboost.onPause(this);
+
+        // Stop playing music
+        Music.stop();
+
+        // Cancel & End the game if it's running
+        if (gameRunning) {
+            endGame(true);
+        }
+
+        // Close Game activity
+        finish();
     }
 
 }

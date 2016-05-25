@@ -15,6 +15,10 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.TextView;
 
+import com.chartboost.sdk.CBLocation;
+import com.chartboost.sdk.Chartboost;
+import com.chartboost.sdk.ChartboostDelegate;
+
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -37,26 +41,23 @@ public class GameOver extends Activity {
         this.score = getIntent().getIntExtra("score", 0);
         TextView scoreView = (TextView) findViewById(R.id.scoreView);
         scoreView.setText(score + "");
-    }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
+        Chartboost.setDelegate(new ChartboostDelegate() {
+            @Override
+            public void didDismissInterstitial(String location) {
+                super.didDismissInterstitial(location);
 
-        // Stop playing music
-        Music.stop();
-
-        // Close GameOver activity
-        finish();
+                // Return to level picker
+                finish();
+            }
+        });
     }
 
     public void play(View v) {
         Music.allowPlay();
 
-        // Launch level picker
-        Intent intent = new Intent(GameOver.this, LevelPicker.class);
-        startActivity(intent);
-        finish();
+        // Show ad
+        Chartboost.showInterstitial(CBLocation.LOCATION_GAMEOVER);
     }
 
     public void share(View v) {
@@ -133,6 +134,50 @@ public class GameOver extends Activity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        Chartboost.onStart(this);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        Chartboost.onStop(this);
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Chartboost.onDestroy(this);
+    }
+
+    @Override
+    public void onBackPressed() {
+        // If an interstitial is on screen, close it.
+        if (Chartboost.onBackPressed())
+            return;
+        else
+            super.onBackPressed();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        Chartboost.onResume(this);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        Chartboost.onPause(this);
+
+        // Stop playing music
+        Music.stop();
     }
 
 }

@@ -1,3 +1,4 @@
+Sizzle is developed by CarrotCorp.
 Sizzle uses the following open-source content and libraries:
 
 * Music

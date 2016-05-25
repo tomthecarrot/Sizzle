@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.chartboost.sdk.CBLocation;
+import com.chartboost.sdk.Chartboost;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -25,22 +28,20 @@ public class MainActivity extends Activity {
 
         // Init & play music
         music = new Music(this);
-    }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
+        try {
+            // Get raw txt file for chartboost info
+            InputStream inputStream = getResources().openRawResource(R.raw.chartboost);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+            String appId = reader.readLine();
+            String appSignature = reader.readLine();
 
-        // Play music again
-        music.start();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-
-        // Stop playing music
-        music.stop();
+            // Init Chartboost ads
+            Chartboost.startWithAppId(this, appId, appSignature);
+            Chartboost.onCreate(this);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void play(View v) {
@@ -79,6 +80,57 @@ public class MainActivity extends Activity {
         alert.setTitle("Open Source");
         alert.setMessage(msg);
         alert.show();
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        Chartboost.onStart(this);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        Chartboost.onStop(this);
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Chartboost.onDestroy(this);
+    }
+
+    @Override
+    public void onBackPressed() {
+        // If an interstitial is on screen, close it.
+        if (Chartboost.onBackPressed())
+            return;
+        else
+            super.onBackPressed();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        Chartboost.onResume(this);
+
+        // Cache ad for game end
+        Chartboost.onCreate(this);
+        Chartboost.cacheInterstitial(CBLocation.LOCATION_GAMEOVER);
+
+        // Play music again
+        music.start();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        Chartboost.onPause(this);
+
+        // Stop playing music
+        music.stop();
     }
 
 }

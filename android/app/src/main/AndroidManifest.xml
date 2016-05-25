@@ -3,6 +3,7 @@
     package="com.carrotcorp.sizzle" >
 
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
@@ -43,12 +44,13 @@
         </activity>
 
         <!--
-            Required Activity for playback of Vungle video ads
+            Required Activity for playback of Chartboost video ads
         -->
-        <activity
-            android:name="com.vungle.publisher.FullScreenAdActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.chartboost.sdk.CBImpressionActivity"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
     </application>
 
 </manifest>

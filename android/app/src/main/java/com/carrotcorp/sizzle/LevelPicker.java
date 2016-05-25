@@ -42,9 +42,6 @@ public class LevelPicker extends Activity {
 
         // Stop playing music
         Music.stop();
-
-        // Close LevelPicker activity
-        finish();
     }
 
     private void lockLevels() {
