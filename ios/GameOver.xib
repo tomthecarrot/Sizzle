@@ -30,7 +30,7 @@
                     </variation>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I just scored" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mB-6D-SLW">
-                    <rect key="frame" x="8" y="53" width="359" height="136"/>
+                    <rect key="frame" x="8" y="50" width="359" height="63"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="136" id="U3l-gi-Wrl"/>
                         <constraint firstAttribute="width" constant="359" id="t5o-NP-F10"/>
@@ -38,9 +38,15 @@
                     <fontDescription key="fontDescription" type="system" pointSize="52"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="U3l-gi-Wrl"/>
+                            <exclude reference="t5o-NP-F10"/>
+                        </mask>
+                    </variation>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xb0-im-1vk">
-                    <rect key="frame" x="8" y="165" width="359" height="136"/>
+                    <rect key="frame" x="8" y="121" width="359" height="115"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="359" id="70b-GR-3OV"/>
                         <constraint firstAttribute="height" constant="136" id="KAr-iN-ycn"/>
@@ -48,9 +54,15 @@
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="96"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="70b-GR-3OV"/>
+                            <exclude reference="KAr-iN-ycn"/>
+                        </mask>
+                    </variation>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="on Sizzle!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzZ-bp-Ubf">
-                    <rect key="frame" x="8" y="272" width="359" height="136"/>
+                    <rect key="frame" x="8" y="244" width="359" height="63"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="136" id="Njh-Jv-sZT"/>
                         <constraint firstAttribute="width" constant="359" id="ZlL-Tr-Q0X"/>
@@ -58,16 +70,28 @@
                     <fontDescription key="fontDescription" type="system" pointSize="52"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Njh-Jv-sZT"/>
+                            <exclude reference="ZlL-Tr-Q0X"/>
+                        </mask>
+                    </variation>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="373-mX-bel">
-                    <rect key="frame" x="107" y="440" width="160" height="160"/>
+                    <rect key="frame" x="107" y="432" width="160" height="160"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="160" id="Thp-ZR-mGL"/>
                         <constraint firstAttribute="width" secondItem="373-mX-bel" secondAttribute="height" multiplier="1:1" id="XMj-1z-RdY"/>
+                        <constraint firstAttribute="height" constant="160" id="eRc-Sv-drU"/>
                     </constraints>
                     <state key="normal" image="b_play.png">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="XMj-1z-RdY"/>
+                        </mask>
+                    </variation>
                     <connections>
                         <action selector="play:" destination="-1" eventType="touchUpInside" id="CdE-NR-nNJ"/>
                     </connections>
@@ -88,8 +112,11 @@
                 <constraint firstItem="vzZ-bp-Ubf" firstAttribute="top" secondItem="0mB-6D-SLW" secondAttribute="bottom" constant="83" id="bqX-bz-s4e"/>
                 <constraint firstAttribute="bottom" secondItem="AkO-9g-Vom" secondAttribute="bottom" id="cGe-5O-4yh"/>
                 <constraint firstItem="0mB-6D-SLW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="ff4-0N-uKD"/>
+                <constraint firstItem="Xb0-im-1vk" firstAttribute="top" secondItem="0mB-6D-SLW" secondAttribute="bottom" constant="8" id="fkV-Jq-EQa"/>
                 <constraint firstItem="Xb0-im-1vk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="165" id="hnN-5h-9SV"/>
-                <constraint firstItem="0mB-6D-SLW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="53" id="tuD-Xe-BwK"/>
+                <constraint firstItem="vzZ-bp-Ubf" firstAttribute="top" secondItem="Xb0-im-1vk" secondAttribute="bottom" constant="8" id="ism-hp-rGk"/>
+                <constraint firstAttribute="bottom" secondItem="373-mX-bel" secondAttribute="bottom" constant="75" id="kau-RZ-hzw"/>
+                <constraint firstItem="0mB-6D-SLW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="tuD-Xe-BwK"/>
                 <constraint firstItem="373-mX-bel" firstAttribute="top" secondItem="vzZ-bp-Ubf" secondAttribute="bottom" constant="32" id="uCa-FC-2Wb"/>
                 <constraint firstItem="AkO-9g-Vom" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="144" id="uwE-5D-Vwm"/>
                 <constraint firstAttribute="bottom" secondItem="373-mX-bel" secondAttribute="bottom" constant="67" id="vpu-W0-cxY"/>
@@ -99,8 +126,12 @@
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <variation key="default">
                 <mask key="constraints">
+                    <exclude reference="hnN-5h-9SV"/>
                     <exclude reference="Xgb-vh-Hk7"/>
                     <exclude reference="cGe-5O-4yh"/>
+                    <exclude reference="bqX-bz-s4e"/>
+                    <exclude reference="uCa-FC-2Wb"/>
+                    <exclude reference="vpu-W0-cxY"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="564.5" y="390.5"/>

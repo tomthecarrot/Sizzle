@@ -24,26 +24,13 @@
                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAy-hv-rbn">
-                                <rect key="frame" x="12" y="501" width="351" height="55"/>
+                                <rect key="frame" x="12" y="472" width="351" height="76"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
                                 <state key="normal" title="Tutorial">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="tutorial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CmV-sA-A1V"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33L-rd-IMD">
-                                <rect key="frame" x="299" y="631" width="80" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="t5s-0G-m8O"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Credits">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="opensource:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GoC-Bz-5lt"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gjp-bV-Sgq">
@@ -72,23 +59,43 @@
                                     <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jx2-4S-8Al"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33L-rd-IMD">
+                                <rect key="frame" x="289" y="623" width="80" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="t5s-0G-m8O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Credits">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="opensource:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GoC-Bz-5lt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="UAy-hv-rbn" firstAttribute="top" secondItem="DLP-Jz-X4f" secondAttribute="bottom" constant="71" id="3bY-C7-EGQ"/>
                             <constraint firstItem="UAy-hv-rbn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7Rq-zO-Pvv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="53S-Yb-76f" secondAttribute="trailing" constant="-20" id="7ni-jd-3UW"/>
                             <constraint firstItem="33L-rd-IMD" firstAttribute="top" secondItem="UAy-hv-rbn" secondAttribute="bottom" constant="75" id="81A-G5-D9J"/>
                             <constraint firstItem="Gjp-bV-Sgq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="8l6-ef-RFs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="33L-rd-IMD" secondAttribute="bottom" constant="8" id="Bac-Fj-9Yy"/>
                             <constraint firstItem="53S-Yb-76f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="EAy-o6-vW3"/>
+                            <constraint firstItem="DLP-Jz-X4f" firstAttribute="top" secondItem="Gjp-bV-Sgq" secondAttribute="bottom" constant="71" id="ERo-9r-Drz"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="53S-Yb-76f" secondAttribute="bottom" id="G1Q-I4-DE1"/>
                             <constraint firstItem="DLP-Jz-X4f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GMp-1h-hyG"/>
                             <constraint firstItem="53S-Yb-76f" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="144" id="KJx-g7-jHF"/>
+                            <constraint firstItem="33L-rd-IMD" firstAttribute="top" secondItem="UAy-hv-rbn" secondAttribute="bottom" constant="75" id="Mfj-zG-KSF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="33L-rd-IMD" secondAttribute="bottom" id="OlC-eY-TNI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UAy-hv-rbn" secondAttribute="trailing" constant="-4" id="QZI-hh-jzS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Gjp-bV-Sgq" secondAttribute="trailing" constant="26" id="cxY-Rq-RGn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="33L-rd-IMD" secondAttribute="trailing" constant="-20" id="gXw-3t-9k5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="33L-rd-IMD" secondAttribute="bottom" constant="10" id="lzS-UQ-hh3"/>
                             <constraint firstItem="UAy-hv-rbn" firstAttribute="top" secondItem="DLP-Jz-X4f" secondAttribute="bottom" constant="100" id="mF4-dz-oBF"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="53S-Yb-76f" secondAttribute="bottom" id="peE-MF-ySo"/>
                             <constraint firstItem="UAy-hv-rbn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rJ8-xJ-5W3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="33L-rd-IMD" secondAttribute="trailing" constant="-10" id="rc2-U4-pyU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="33L-rd-IMD" secondAttribute="bottom" id="vua-tJ-ths"/>
                             <constraint firstItem="UAy-hv-rbn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wxT-EE-DGg"/>
                             <constraint firstItem="UAy-hv-rbn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="xwg-MR-n4v"/>
@@ -100,8 +107,14 @@
                             <mask key="constraints">
                                 <exclude reference="zdf-HY-lVo"/>
                                 <exclude reference="7Rq-zO-Pvv"/>
+                                <exclude reference="mF4-dz-oBF"/>
                                 <exclude reference="rJ8-xJ-5W3"/>
                                 <exclude reference="wxT-EE-DGg"/>
+                                <exclude reference="OlC-eY-TNI"/>
+                                <exclude reference="lzS-UQ-hh3"/>
+                                <exclude reference="vua-tJ-ths"/>
+                                <exclude reference="81A-G5-D9J"/>
+                                <exclude reference="gXw-3t-9k5"/>
                             </mask>
                         </variation>
                     </view>

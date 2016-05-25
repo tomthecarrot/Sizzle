@@ -115,14 +115,14 @@
         // Gravity, while not being touched or burned up.
         while (!touching && !burning) {
             gameTime = [Game gameTime];
-            y += (gameTime / 10) * 0.5; // add to y value
+            y += (gameTime / 10) * 0.01; // add to y value
             
             // Update current Dot view center (on main thread)
             dispatch_sync(dispatch_get_main_queue(), ^{
                 self.center = CGPointMake(x,y);
             });
             
-            usleep(20);
+            usleep(50);
         }
     });
 }
